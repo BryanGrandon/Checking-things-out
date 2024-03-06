@@ -1,8 +1,11 @@
-# React + Vite
+# JSON Placeholder React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project we use the face api offered by [JSONPlaceholder](https://jsonplaceholder.typicode.com/) to create a web page that will show the information provided by the api.
 
-Currently, two official plugins are available:
+## Table of content
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+
+## Introduction
+
+The reason for the project is to be able to learn both **React** and learn how to **consume APIs**.
