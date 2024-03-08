@@ -1,0 +1,32 @@
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: #1f1235;
+  width: 20rem;
+}
+.card__header {
+  background-color: #67568c;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: cursive;
+  padding: 0.5rem;
+  text-align: center;
+}
+.card__info {
+  background-color: #e2daeb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.3rem 1rem 0.8rem;
+}
+.icon {
+  color: #67568c;
+}
+
+.card__name,
+.card__email,
+.card__phone,
+.card__website {
+  display: flex;
+  gap: 0.5rem;
+}
