@@ -1,4 +1,4 @@
-import { Post } from "./components/Post/Post";
+import { Posts } from "./components/Posts/Posts";
 import { Users } from "./components/Users/Users";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       </article>
       <article>
         <h2>Posts</h2>
-        <Post />
+        <Posts />
       </article>
     </>
   );
