@@ -2,7 +2,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   color: #1f1235;
-  width: 20rem;
+  width: 18rem;
 }
 .card__header {
   background-color: #67568c;
@@ -29,4 +29,8 @@
 .card__website {
   display: flex;
   gap: 0.5rem;
+}
+
+.card__website {
+  text-decoration: underline;
 }

@@ -9,3 +9,7 @@ In this project we use the face api offered by [JSONPlaceholder](https://jsonpla
 ## Introduction
 
 The reason for the project is to be able to learn both **React** and learn how to **consume APIs**.
+
+## Dependencies
+
+- icons: [Font awesome docs](https://docs.fontawesome.com/web/use-with/react/)
