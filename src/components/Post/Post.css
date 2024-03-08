@@ -1,0 +1,20 @@
+.post {
+  background-color: #f4effc;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  max-width: 60rem;
+}
+.post__title {
+  color: #4c346b;
+  font-family: cursive;
+  font-size: 1.3rem;
+}
+.post__body {
+  color: #1f1235;
+}
+.post__body::first-letter {
+  text-transform: uppercase;
+}
