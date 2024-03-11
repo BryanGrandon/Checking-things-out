@@ -19,3 +19,9 @@
 .post__body::first-letter {
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 1200px) {
+  .post {
+    width: 60rem;
+  }
+}

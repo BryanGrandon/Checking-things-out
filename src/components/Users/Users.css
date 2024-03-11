@@ -1,5 +1,12 @@
 .users {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1200px) {
+  .users {
+    justify-content: start;
+  }
 }
