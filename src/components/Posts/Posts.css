@@ -10,23 +10,3 @@
   display: flex;
   justify-content: center;
 }
-
-.post__btn {
-  cursor: pointer;
-  background-color: #ff6e6c;
-  font-family: cursive;
-  font-weight: bold;
-  color: #1f1235;
-  padding: 0.3rem 2rem;
-  border-radius: 1rem;
-  width: 100%;
-}
-.post__btn:hover {
-  background-color: #ff5755;
-}
-
-@media screen and (min-width: 600px) {
-  .post__btn {
-    width: 20rem;
-  }
-}
