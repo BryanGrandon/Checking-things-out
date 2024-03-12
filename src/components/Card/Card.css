@@ -2,7 +2,12 @@
   border-radius: 0.5rem;
   overflow: hidden;
   color: #1f1235;
-  min-width: 15rem;
+  width: 20rem;
+}
+@media screen and (min-width: 600px) {
+  .card {
+    width: 15rem;
+  }
 }
 .card__header {
   background-color: #67568c;
