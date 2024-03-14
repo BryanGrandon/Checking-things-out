@@ -11,6 +11,14 @@ function App() {
         <Navbar />
       </header>
       <main>
+        <header className="header">
+          <h1 className="title">Project React</h1>
+          <p className="header__text">
+            In this project we use the face api offered by JSONPlaceholder to
+            create a web page that will show the information provided by the
+            api.
+          </p>
+        </header>
         <article className="article" id="users">
           <h2 className="title__h2">Users</h2>
           <Users />
