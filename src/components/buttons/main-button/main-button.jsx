@@ -1,6 +1,6 @@
-import "./Button.css";
+import "./main-button-styles.css";
 
-export function Button({ text, theFunction }) {
+export function MainButton({ text, theFunction }) {
   return (
     <button className="btn" onClick={theFunction}>
       {text}

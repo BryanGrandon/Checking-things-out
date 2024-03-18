@@ -6,9 +6,9 @@ import {
   faGlobe,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import "./Card.css";
+import "./user-card-styles.css";
 
-export function Card({ name, email, phone, website, company }) {
+export function UserCard({ name, email, phone, website, company }) {
   return (
     <>
       <article className="card">

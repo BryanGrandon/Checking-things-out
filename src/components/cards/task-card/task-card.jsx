@@ -1,5 +1,5 @@
 import React from "react";
-import "./TaskCard.css";
+import "./task-card-styles.css";
 
 function TaskCard({ title, completed }) {
   return (

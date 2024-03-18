@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import { Button } from "../Button/Button";
-import { TaskContext } from "../../context/TaskContext";
+import { MainButton } from "../../buttons/main-button/main-button";
+import { TaskContext } from "../../../context/TaskContext";
 
 function TaskForm() {
   const { createTask } = useContext(TaskContext);
@@ -22,7 +22,7 @@ function TaskForm() {
           setTaskTitle(e.target.value);
         }}
       />
-      <Button text="Save" />
+      <MainButton text="Save" />
     </form>
   );
 }

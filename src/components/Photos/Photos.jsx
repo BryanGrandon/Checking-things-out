@@ -2,7 +2,7 @@ import React, { Suspense, useState } from "react";
 import { fetchData } from "../../service/fetchData";
 import { Image } from "../Image/Image";
 import "./Photos.css";
-import { Button } from "../Button/Button";
+import { MainButton } from "../buttons/main-button/main-button";
 
 const photsData = fetchData("https://jsonplaceholder.typicode.com/photos");
 
@@ -26,7 +26,7 @@ export const Photos = () => {
           ""
         ) : (
           <section className="photos__section-btn">
-            <Button text="More Photos" theFunction={updateRender} />
+            <MainButton text="More Photos" theFunction={updateRender} />
           </section>
         )}
       </>

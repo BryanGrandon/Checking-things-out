@@ -1,6 +1,6 @@
-import "./Post.css";
+import "./post-card-styles.css";
 
-export function Post({ title, text }) {
+export function PostCard({ title, text }) {
   return (
     <section className="post">
       <h3 className="post__title">{title}</h3>

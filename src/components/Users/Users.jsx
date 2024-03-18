@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { fetchData } from "../../service/fetchData";
-import { Card } from "../Card/Card";
+import { UserCard } from "../cards/user-card/user-card";
 import "./Users.css";
 
 const userData = fetchData("https://jsonplaceholder.typicode.com/users");
@@ -11,7 +11,7 @@ export function Users() {
     <section className="users">
       <Suspense>
         {data.map((user) => (
-          <Card
+          <UserCard
             key={user.id}
             name={user.name}
             email={user.email}
