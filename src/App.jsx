@@ -2,7 +2,10 @@ import { Posts } from "./components/Posts/Posts";
 import { Users } from "./components/Users/Users";
 import { Photos } from "./components/Photos/Photos";
 import { Navbar } from "./components/Navbar/Navbar";
+import Todos from "./components/Todos/Todos";
 import "./App.css";
+
+import { TaskContextProvider } from "./context/TaskContext";
 
 function App() {
   return (
@@ -30,6 +33,12 @@ function App() {
         <article className="article" id="photos">
           <h2 className="title__h2">Photos</h2>
           <Photos />
+        </article>
+        <article className="article" id="photos">
+          <h2 className="title__h2">To-Dos</h2>
+          <TaskContextProvider>
+            <Todos />
+          </TaskContextProvider>
         </article>
       </main>
     </>
