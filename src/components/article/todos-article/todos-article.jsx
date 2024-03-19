@@ -2,7 +2,7 @@ import React from "react";
 import TaskList from "../../lists/task-list/task-list";
 import TaskForm from "../../form/task-form/task-form";
 
-import { TaskContextProvider } from "../../../context/task-context";
+import { TaskContextProvider } from "../../../context/TaskContext";
 
 export default function TodosArticle() {
   return (
