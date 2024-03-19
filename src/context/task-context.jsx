@@ -1,14 +1,10 @@
 import React, { createContext, useState } from "react";
-import { fetchData } from "../service/fetchData";
+import getTodos from "../service/api/get-todos";
 
 const TaskContext = createContext();
 
-const todosData = fetchData(
-  "https://jsonplaceholder.typicode.com/todos?userId=1"
-);
-
 function TaskContextProvider(props) {
-  const data = todosData.read();
+  const data = getTodos.read();
   const [tasks, setTasks] = useState(data);
 
   function createTask(taskTitle) {

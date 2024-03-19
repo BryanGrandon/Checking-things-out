@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { MainButton } from "../../buttons/main-button/main-button";
-import { TaskContext } from "../../../context/TaskContext";
+import { TaskContext } from "../../../context/task-context";
 
 function TaskForm() {
   const { createTask } = useContext(TaskContext);

@@ -1,12 +1,10 @@
 import React, { Suspense, useState } from "react";
 import { MainButton } from "../../buttons/main-button/main-button";
-import { fetchData } from "../../../service/fetchData";
+import getPhotos from "../../../service/api/get-photos";
 import "./photo-article-styles.css";
 
-const photsData = fetchData("https://jsonplaceholder.typicode.com/photos");
-
 export default function PhotosArticle() {
-  const data = photsData.read();
+  const data = getPhotos.read();
 
   const [render, setRender] = useState(14);
   const updateRender = () => setRender(render + 14);

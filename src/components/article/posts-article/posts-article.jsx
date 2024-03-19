@@ -1,13 +1,11 @@
 import { Suspense, useState } from "react";
-import { fetchData } from "../../../service/fetchData";
 import { PostCard } from "../../cards/post-card/post-card";
 import { MainButton } from "../../buttons/main-button/main-button";
+import getPosts from "../../../service/api/get-posts";
 import "./posts-article-styles.css";
 
-const postData = fetchData("https://jsonplaceholder.typicode.com/posts");
-
 export default function PostsArticle() {
-  const data = postData.read();
+  const data = getPosts.read();
 
   const [render, setRender] = useState(5);
   const updateRender = () => setRender(render + 5);
