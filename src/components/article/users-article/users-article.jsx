@@ -1,11 +1,12 @@
 import { Suspense } from "react";
-import { fetchData } from "../../service/fetchData";
-import { UserCard } from "../cards/user-card/user-card";
-import "./Users.css";
+import { fetchData } from "../../../service/fetchData";
+import { UserCard } from "../../cards/user-card/user-card";
+
+import "./users-article-styles.css";
 
 const userData = fetchData("https://jsonplaceholder.typicode.com/users");
 
-export function Users() {
+export default function UsersArticle() {
   const data = userData.read();
   return (
     <section className="users">
