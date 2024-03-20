@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { TaskContext } from "../../../context/TaskContext";
+import { TaskContext } from "../../../context/task-context";
 import TaskCard from "../../cards/task-card/task-card";
 
 function TaskList() {
