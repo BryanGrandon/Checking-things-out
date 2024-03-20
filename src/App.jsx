@@ -8,9 +8,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main>
         <header className="header">
           <h1 className="title">Project React</h1>
