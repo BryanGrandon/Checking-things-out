@@ -1,33 +1,22 @@
-import PostsArticle from "./components/article/posts-article/posts-article";
-import UsersArticle from "./components/article/users-article/users-article";
-import PhotosArticle from "./components/article/photo-article/photo-article";
-import TodosArticle from "./components/article/todos-article/todos-article";
-import { Navbar } from "./components/navbar/navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/home";
+import Projects from "./pages/projects/projects";
+import NotFound from "./pages/not-found/not-found";
+import Contact from "./pages/contact/contact";
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <header className="header">
-          <h1 className="title">Project React</h1>
-          <p className="header__text">
-            In this project we use the face api offered by JSONPlaceholder to
-            create a web page that will show the information provided by the
-            api.
-          </p>
-        </header>
-
-        <UsersArticle />
-
-        <PostsArticle />
-
-        <PhotosArticle />
-
-        <TodosArticle />
-      </main>
-    </>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 }
 export default App;
