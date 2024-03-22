@@ -12,5 +12,5 @@ The reason for the project is to be able to learn both **React** and learn how t
 
 ## Dependencies
 
-- icons: [Font awesome docs](https://docs.fontawesome.com/web/use-with/react/)
+- icons:
 - react-router-dom: [ReactRouter](https://reactrouter.com/en/main)
