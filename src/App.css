@@ -2,4 +2,12 @@
   --padding-x: 2rem;
   --padding-y: 4rem;
   --title-content: 1.5rem;
+  --max-width: 1200px;
+
+  --background-main: #242629;
+  --background: #16161a;
+  --headline: #fffffe;
+  --paragraph: #94a1b2;
+  --highlight: #7f5af0;
+  --tertiary: #2cb67d;
 }
