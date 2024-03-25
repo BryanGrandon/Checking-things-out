@@ -1,14 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Pages
 import Home from "./pages/home/home";
-import Projects from "./pages/projects/projects";
-import NotFound from "./pages/not-found/not-found";
+import Blog from "./pages/blog/blog";
+import AboutUs from "./pages/about-us/about-us";
 import Contact from "./pages/contact/contact";
-// Containers
-import ProjectsUsers from "./containers/projects/projects-users/projects-users";
-import ProjectsTodos from "./containers/projects/projects-todos/projects-todos";
-import ProjectsPosts from "./containers/projects/projects-posts/projects-posts";
-import ProjectsPhotos from "./containers/projects/projects-photos/projects-photos";
+import NotFound from "./pages/not-found/not-found";
+
 // Styles
 import "./App.css";
 
@@ -18,12 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects/" element={<Projects />}>
-            <Route path="users" element={<ProjectsUsers />} />
-            <Route path="todos" element={<ProjectsTodos />} />
-            <Route path="posts" element={<ProjectsPosts />} />
-            <Route path="photos" element={<ProjectsPhotos />} />
-          </Route>
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
