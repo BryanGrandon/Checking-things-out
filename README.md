@@ -12,5 +12,5 @@ The reason for the project is to be able to learn both **React** and learn how t
 
 ## Dependencies
 
-- icons:
-- react-router-dom: [ReactRouter](https://reactrouter.com/en/main)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [ReactRouter](https://reactrouter.com/en/main)
