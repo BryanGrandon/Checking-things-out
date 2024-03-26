@@ -11,7 +11,7 @@ export default function Home() {
 
       <Hero
         title="JSON Project"
-        paragraph="JSON Project offers you a space to create a blog to your liking. Meet people who have the same tastes as you."
+        paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non, repellendus blanditiis amet reiciendis voluptatibus officia recusandae ipsam repellat provident."
         svg={homeSVG}
       />
 
