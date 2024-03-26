@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--padding-x);
+  max-width: 1200px;
+  margin: auto;
+}
+.about__paragraph {
+  color: var(--paragraph);
+}
+.about__title {
+  font-size: var(--title-content);
+  font-family: cursive;
+}

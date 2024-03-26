@@ -1,0 +1,11 @@
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--padding-x);
+}
+.hero-image-svg {
+  object-fit: contain;
+  max-width: 40rem;
+}
