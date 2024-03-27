@@ -1,8 +1,8 @@
 import HeroImage from "../../components/hero-image/hero-image";
 import Navbar from "../../components/navbar/navbar";
 import aboutUsSVG from "../../assets/about-us.svg";
-import "./about-us-styles.css";
 import AboutUsCard from "../../components/cards/about-us-card/about-us-card";
+import "./about-us-styles.css";
 
 export default function AboutUs() {
   return (
@@ -11,7 +11,7 @@ export default function AboutUs() {
 
       <HeroImage svg={aboutUsSVG} />
 
-      <article className="our-vision">
+      <article className="about-us">
         <AboutUsCard
           title="Oru Vision"
           paragraphs="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -19,9 +19,7 @@ export default function AboutUs() {
             inventore reprehenderit ullam porro dignissimos recusandae aliquid
             iste quos tempora facere unde?"
         />
-      </article>
 
-      <article className="our-approach">
         <AboutUsCard
           title="Oru Approach"
           paragraphs=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit et
@@ -30,9 +28,7 @@ export default function AboutUs() {
           consequatur vel doloremque suscipit facilis incidunt corrupti
           inventore corporis illo vitae explicabo nulla sapiente soluta?"
         />
-      </article>
 
-      <article className="our-process">
         <AboutUsCard
           title="Oru Process"
           paragraphs="Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
