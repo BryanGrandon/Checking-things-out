@@ -130,7 +130,7 @@ td {
 
 /* Avoid SVG problems. */
 svg {
-  width: 100%;
+  /* width: 100%; */
   display: block;
   fill: currentColor;
 }
