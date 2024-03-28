@@ -8,7 +8,15 @@ import {
 export default function ContactForm() {
   const eventSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.name);
+    const infoUser = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+    console.log(infoUser);
+    e.target.name.value = "";
+    e.target.email.value = "";
+    e.target.message.value = "";
   };
 
   return (
@@ -20,6 +28,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           placeholder="Name"
+          required
         />
       </label>
       <label className="contact-form__label">
@@ -29,6 +38,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           placeholder="Email"
+          required
         />
       </label>
       <label className="contact-form__label">
@@ -38,6 +48,7 @@ export default function ContactForm() {
           name="message"
           type="text"
           placeholder="Message"
+          required
         />
       </label>
       <button className="contact-form__button">SEND</button>

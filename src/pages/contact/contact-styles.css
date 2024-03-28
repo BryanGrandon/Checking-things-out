@@ -23,3 +23,12 @@
   font-size: 1.2rem;
   font-family: cursive;
 }
+
+@media screen and (max-width: 850px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+}
