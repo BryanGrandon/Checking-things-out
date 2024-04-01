@@ -1,15 +1,16 @@
 import { Suspense, useState } from "react";
 import { MainButton } from "../../../components/buttons/main-button/main-button";
 import getPhotos from "../../../service/api/get-photos";
+import "./blog-photos-styles.css";
 
-export default function ProjectsPhotos() {
+export default function BlogPhotos() {
   const data = getPhotos.read();
   const [render, setRender] = useState(14);
   const updateRender = () => setRender(render + 14);
   return (
     <>
       <Suspense>
-        <section>
+        <section className="photo-containers">
           {data.map((photo) => {
             if (photo.id <= render) {
               return (
@@ -17,14 +18,14 @@ export default function ProjectsPhotos() {
                   key={photo.id}
                   src={photo.url}
                   alt={photo.title}
-                  className="image"
+                  className="photo"
                 />
               );
             }
           })}
         </section>
         {data.at(-1).id === render ? null : (
-          <section className="photos__section-btn">
+          <section className="photo__section-btn">
             <MainButton text="More Photos" theFunction={updateRender} />
           </section>
         )}

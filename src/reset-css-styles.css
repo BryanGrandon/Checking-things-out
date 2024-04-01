@@ -1,7 +1,7 @@
 /* Here we define the custom properties */
 :root {
   --dark: #242629;
-  --white: #ececec;
+  --white: #f7f7f7;
   /* Typography */
   --type-primary: system-ui, -apple-system, sans-serif;
   --type-secondary: Verdana;
@@ -167,5 +167,11 @@ p {
   body {
     color: var(--white);
     background-color: var(--dark);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--dark);
+    background-color: #e7e7e7;
   }
 }

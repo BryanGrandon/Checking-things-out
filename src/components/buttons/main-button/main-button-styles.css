@@ -1,12 +1,13 @@
 .btn {
   cursor: pointer;
-  background-color: #ff6e6c;
+  background-color: var(--highlight);
   font-family: cursive;
-  font-weight: bold;
-  color: #1f1235;
+  /* font-weight: bold; */
+  /* color: #1f1235; */
+  color: #fff;
   padding: 0.3rem 2rem;
   border-radius: 1rem;
 }
 .btn:hover {
-  background-color: #ff5755;
+  background-color: var(--tertiary);
 }
