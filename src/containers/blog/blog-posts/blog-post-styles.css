@@ -1,0 +1,8 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post__section_btn {
+  margin: auto;
+}

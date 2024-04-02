@@ -25,7 +25,7 @@ export default function BlogPhotos() {
           })}
         </section>
         {data.at(-1).id === render ? null : (
-          <section className="photo__section-btn">
+          <section className="photo__section_btn">
             <MainButton text="More Photos" theFunction={updateRender} />
           </section>
         )}

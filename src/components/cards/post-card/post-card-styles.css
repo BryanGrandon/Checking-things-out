@@ -1,5 +1,5 @@
 .post {
-  background-color: #f4effc;
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -7,12 +7,12 @@
   padding: 1rem;
 }
 .post__title {
-  color: #4c346b;
+  color: var(--headline);
   font-family: cursive;
   font-size: 1.3rem;
 }
 .post__body {
-  color: #1f1235;
+  color: var(--paragraph);
 }
 .post__title::first-letter,
 .post__body::first-letter {
