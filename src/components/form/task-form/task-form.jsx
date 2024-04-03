@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { MainButton } from "../../buttons/main-button/main-button";
 import { TaskContext } from "../../../context/task-context";
+import "./task-form-styles.css";
 
 TaskContext;
 
@@ -16,8 +17,9 @@ function TaskForm() {
   };
 
   return (
-    <form onSubmit={handlerSubmit}>
+    <form onSubmit={handlerSubmit} className="task-from">
       <input
+        className="task-form__input"
         type="text"
         placeholder="Write your homework"
         onChange={(e) => {
