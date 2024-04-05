@@ -50,7 +50,6 @@ export default function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
-      <section className="space-for-navbar"></section>
     </>
   );
 }

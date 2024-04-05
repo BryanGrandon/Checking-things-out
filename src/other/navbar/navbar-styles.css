@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -19,7 +19,7 @@
 }
 .navbar__color {
   color: var(--headline);
-  background-color: var(--background);
+  background-color: #00000000;
 }
 .navbar__links {
   display: none;
