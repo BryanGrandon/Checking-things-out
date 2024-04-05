@@ -1,3 +1,56 @@
+@import "/src/styles/color.css";
+
 .modal {
-  border: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-alpha);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalContent {
+  width: 25rem;
+  min-height: 25rem;
+  border-radius: 1rem;
+  background-color: var(--background);
+  border: 2px solid var(--highlight);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-family: cursive;
+}
+.names {
+  color: var(--tertiary);
+}
+.addressList {
+  padding: 0.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.btnSection {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem;
+}
+.button {
+  border: 2px solid var(--tertiary);
+  border-radius: 2rem;
+  padding: 0.3rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.button:hover {
+  background-color: var(--tertiary);
+  color: var(--background);
 }

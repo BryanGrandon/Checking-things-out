@@ -18,6 +18,10 @@ export default function Users() {
     setInfoUser(userData);
   };
 
+  const handlerClickModal = (e) => {
+    setTheModalIsOpen(false);
+  };
+
   return (
     <>
       <main>
@@ -37,7 +41,11 @@ export default function Users() {
               />
             ))}
           </article>
-          <Modal theModalIsOpen={theModalIsOpen} info={infoUser} />
+          <Modal
+            theModalIsOpen={theModalIsOpen}
+            info={infoUser}
+            theFunction={handlerClickModal}
+          />
         </article>
       </main>
     </>
