@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import getUsers from "../../service/api/get-users";
 import styles from "./users.module.css";
-//
 import Modal from "../../components/modal/modal";
 import UserCard from "../../components/user-card/user-card";
 
@@ -18,7 +17,7 @@ export default function Users() {
     setInfoUser(userData);
   };
 
-  const handlerClickModal = (e) => {
+  const handlerClickModal = () => {
     setTheModalIsOpen(false);
   };
 
@@ -29,7 +28,7 @@ export default function Users() {
           <h1>Users</h1>
         </header>
         <article className={styles.listOfNames}>
-          <h2 className={styles.title}>Lista de nombres</h2>
+          <h2 className={styles.title}>List of names</h2>
           <article className={styles.usersCards}>
             {data.map((user) => (
               <UserCard
