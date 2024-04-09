@@ -9,6 +9,12 @@
   color: var(--paragraph);
   background-color: var(--background);
 }
+.card__name,
+.card__email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .button {
   border-radius: 0.8rem;
