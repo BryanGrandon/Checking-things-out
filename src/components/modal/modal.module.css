@@ -22,7 +22,6 @@
   flex-direction: column;
   gap: 1rem;
 }
-
 .info {
   display: flex;
   flex-direction: column;
@@ -42,15 +41,4 @@
   display: flex;
   justify-content: end;
   padding: 0.5rem;
-}
-.button {
-  background-color: var(--highlight);
-  border-radius: 2rem;
-  padding: 0.3rem 2rem;
-  font-weight: bold;
-  font-size: 1rem;
-}
-.button:hover {
-  background-color: var(--tertiary);
-  color: var(--background);
 }

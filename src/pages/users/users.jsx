@@ -17,6 +17,7 @@ export default function Users() {
     setTheModalIsOpen(true);
     setInfoUser(userData);
   };
+
   const handlerModal = () => {
     setTheModalIsOpen(false);
   };

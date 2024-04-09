@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { MdEmail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 
+import Button from "../button/button";
+
 import styles from "./user-card.module.css";
 
 export default function UserCard({ name, email, buttonFunction, value }) {
@@ -18,9 +20,7 @@ export default function UserCard({ name, email, buttonFunction, value }) {
           {email}
         </p>
       </section>
-      <button className={styles.button} onClick={buttonFunction} value={value}>
-        More info
-      </button>
+      <Button buttonFunction={buttonFunction} text="More Info" value={value} />
     </section>
   );
 }

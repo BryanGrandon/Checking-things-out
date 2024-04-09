@@ -1,3 +1,4 @@
+import Button from "../button/button";
 import styles from "./modal.module.css";
 import PropTypes from "prop-types";
 
@@ -8,9 +9,7 @@ export default function Modal({ theModalIsOpen, buttonFunction, children }) {
     <article className={styles.modal}>
       <article className={styles.modalContent}>
         {children}
-        <button onClick={buttonFunction} className={styles.button}>
-          Close
-        </button>
+        <Button buttonFunction={buttonFunction} text="Close" />
       </article>
     </article>
   );
