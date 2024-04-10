@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import getUsers from "../../service/api/get-users";
-import styles from "./users.module.css";
 import Modal from "../../components/modal/modal";
 import UserCard from "../../components/user-card/user-card";
 import ListUserInformation from "../../components/list-user-information/list-user-information";
+import styles from "./users.module.css";
 
 export default function Users() {
   const [theModalIsOpen, setTheModalIsOpen] = useState(false);
