@@ -1,14 +1,6 @@
-# JSON Placeholder React
+# Checking things out
 
-In this project we use the face api offered by [JSONPlaceholder](https://jsonplaceholder.typicode.com/) to create a web page that will show the information provided by the api.
-
-## Table of content
-
-- [Introduction](#introduction)
-
-## Introduction
-
-The reason for the project is to be able to learn both **React** and learn how to **consume APIs**.
+This project will test functions, libraries, animations and other things that will be used in other projects.
 
 ## Dependencies
 
