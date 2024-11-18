@@ -1,10 +1,18 @@
 import { extractColors } from 'extract-colors'
 import './app.css'
-import { useState } from 'react'
+import Values from 'values.js'
+import { useEffect, useState } from 'react'
 
 function App () {
   const [imageColor, setImageColor] = useState([])
   const [srcImg, setSrcImg] = useState('')
+  const [theColor, setTheColor] = useState('')
+  const [TColor, setTColor] = useState([])
+
+  useEffect(() => {
+    setTheColor('#ff0000')
+    setTColor(new Values('#ff0000').all(20))
+  }, [])
 
   const palette = async (img) => {
     const output = await extractColors(img)
@@ -20,18 +28,40 @@ function App () {
     reader.readAsDataURL(e.target.files[0])
   }
 
+  const handlerClickT = (color) => {
+    setTheColor(color)
+    setTColor(new Values(color).all(20))
+  }
+
   return (
     <main>
-
-      <input type='file' name='file' id='img-file' onChange={(e) => handlerClick(e)} />
-
-      <img src={`${srcImg}`} alt='K' width='20%' />
-
       <section>
-        {imageColor.map(e => (
-          <p key={Math.random() * 100} style={{ backgroundColor: `${e.hex}` }} className='colors'>{e.hex}</p>
+        <input type='file' name='file' id='img-file' onChange={(e) => handlerClick(e)} />
+
+        <img src={`${srcImg}`} alt='K' width='20%' />
+
+        <section>
+          {imageColor.map((e) => (
+            <p key={Math.random() * 100} style={{ backgroundColor: `${e.hex}` }} className='colors'>
+              {e.hex}
+            </p>
+          ))}
+        </section>
+      </section>
+
+      <section className='color-sect'>
+        {TColor.map((e) => (
+          <p
+            key={Math.random() * 10}
+            style={{ background: `#${e.hex}` }}
+            onClick={() => handlerClickT(`#${e.hex}`)}
+            className={theColor === `#${e.hex}` ? 'card active' : 'card'}
+          >
+            {e.hex}
+          </p>
         ))}
       </section>
+      <section />
     </main>
   )
 }

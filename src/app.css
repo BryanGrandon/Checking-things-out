@@ -9,3 +9,22 @@ main {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
+
+.card {
+    display: block;
+    border: 1px solid #000;
+    text-shadow: 1px 1px 2px #000;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.active {
+    border-color: 2px solid #00f;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.color-sect {
+    display: flex;
+    gap: .1rem;
+}
