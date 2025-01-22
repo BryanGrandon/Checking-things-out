@@ -28,3 +28,15 @@ main {
     display: flex;
     gap: .1rem;
 }
+#img-file {
+    border: 1px solid #f00;
+}
+#img-file::after {
+    content: none;
+}
+.dropzone {
+    border: 1px solid #f00;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+}
