@@ -12,11 +12,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
+    "tailwindcss": "^4.1.4",
     "values.js": "^2.1.1"
   },
   "devDependencies": {
@@ -29,10 +31,10 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "extract-colors": "^4.1.0",
-    "happy-dom": "15.8.3",
+    "happy-dom": "^15.11.7",
     "standard": "17.1.2",
-    "vite": "^5.1.4",
-    "vitest": "^2.1.4"
+    "vite": "^6.2.6",
+    "vitest": "^3.1.1"
   },
   "eslintConfig": {
     "extends": [
